@@ -1,16 +1,19 @@
 body {
     margin: 0;
     background-image: url('goth-tower.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-
+/* Main Page h1 Styles */
 h1 {
-    font-family: 'Horror', serif; /* Apply the Horror font */
-    color: #fff; /* Optional: Change the text color */
-    text-shadow: 0 0 10px #600000, 0 0 20px #600000, 0 0 30px #600000; /* Optional: Adds a spooky glow */
+    font-family: 'Horror', serif;
+    color: #fff;
+    text-shadow: 0 0 10px #600000, 0 0 20px #600000, 0 0 30px #600000;
     text-align: center;
+    margin: 20px;
 }
-
 
 /* Overlay Styling */
 .overlay {
@@ -24,6 +27,7 @@ h1 {
     align-items: center;
     justify-content: center;
     z-index: 9999;
+    padding: 20px;
 }
 
 /* Container to hold image and text */
@@ -85,45 +89,9 @@ h1 {
     font-style: normal;
 }
 
-
-
 /* Apply the Font */
 .overlay-text h2 {
     font-family: 'Horror', serif;
     color: #b30000;
     text-shadow: 0 0 10px #600000, 0 0 20px #600000, 0 0 30px #600000;
-    font-size: 3em;
-    animation: blood-drip 3s infinite alternate;
-}
-
-/* Drip Animation */
-@keyframes blood-drip {
-    0% {
-        text-shadow: 0 0 10px #600000, 0 0 20px #600000, 0 0 30px #600000;
-        color: #b30000;
-        transform: translateY(0);
-    }
-    100% {
-        text-shadow: 0 5px 30px #8b0000, 0 10px 40px #8b0000, 0 15px 50px #8b0000;
-        color: #ff0000;
-        transform: translateY(10px);
-    }
-}
-
-/* Button Styles */
-.overlay-button button {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    border-radius: 8px;
-    border: none;
-    color: #fff;
-    background-color: #4caf50;
-    cursor: pointer;
-}
-
-.overlay-button button.no {
-    background-color: #d9534f;
-}
-
-
+    font-s
