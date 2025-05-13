@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    background-image: url('goth-tower.jpg');
+}
+
+
+h1 {
+    font-family: 'Horror', serif; /* Apply the Horror font */
+    color: #fff; /* Optional: Change the text color */
+    text-shadow: 0 0 10px #600000, 0 0 20px #600000, 0 0 30px #600000; /* Optional: Adds a spooky glow */
+    text-align: center;
+}
+
+
+/* Overlay Styling */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.98);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+/* Container to hold image and text */
+.overlay-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+/* Image Styling */
+.overlay-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+}
+
+/* Text Styling */
+.overlay-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px 40px;
+    border-radius: 132px;
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+/* Button Styling */
+.overlay-button button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    background-color: #4caf50;
+    cursor: pointer;
+}
+
+.overlay-button button.no {
+    background-color: #d9534f;
+}
+
+/* Custom Gothic Horror Font */
+@font-face {
+    font-family: 'Horror';
+    src: url('./Horror.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* Apply the Font */
+.overlay-text h2 {
+    font-family: 'Horror', serif;
+    color: #b30000;
+    text-shadow: 0 0 10px #600000, 0 0 20px #600000, 0 0 30px #600000;
+    font-size: 3em;
+    animation: blood-drip 3s infinite alternate;
+}
+
+/* Drip Animation */
+@keyframes blood-drip {
+    0% {
+        text-shadow: 0 0 10px #600000, 0 0 20px #600000, 0 0 30px #600000;
+        color: #b30000;
+        transform: translateY(0);
+    }
+    100% {
+        text-shadow: 0 5px 30px #8b0000, 0 10px 40px #8b0000, 0 15px 50px #8b0000;
+        color: #ff0000;
+        transform: translateY(10px);
+    }
+}
+
+/* Button Styles */
+.overlay-button button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    background-color: #4caf50;
+    cursor: pointer;
+}
+
+.overlay-button button.no {
+    background-color: #d9534f;
+}
+
+
